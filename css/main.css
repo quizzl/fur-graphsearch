@@ -1,0 +1,77 @@
+body, html {
+	margin:0;
+	font-family:sans-serif;
+}
+#root {
+	display:flex;
+	flex-direction:row;
+	height: 100%;
+}
+#main_content {
+	display:flex;
+	flex-direction:column;
+	align-items:stretch;
+	width: 100%;
+}
+	#input_in_holder {
+		display:flex;
+		flex-direction:row;
+		gap:1em;
+	}
+		#username_in {
+			flex:1;
+			font-size: 1.3em;
+			padding: 0.7em;
+			font-family:sans-serif;
+		}
+		#input_in_holder > input[type="submit"] {
+			background: none;
+			outline: none;
+			border: #888 solid 1px;
+			padding: 1em;
+			display: block;
+		}
+		#stats_prefs_pane {
+			list-style-type: none;
+		}
+		#stats_prefs_pane > li {
+			display: inline-block;
+			margin: 1em;
+		}
+
+#meta_results_container > ul {
+	list-style-type:none;
+}
+	#meta_results_container > ul > li {
+		display: inline-block;
+		margin: 0 0.8em 0 0;
+		padding: 0.4em;
+	}
+		#meta_results_container > ul h2 {
+			font-size:1.2em;
+			margin:0.5em 0;
+		}
+		#meta_results_container > ul p {
+			margin:0;
+		}
+#outer_results_container {
+	display:flex;
+	flex-direction:row;
+	min-height: 0;
+	border-top:#DDD solid 1px;
+}
+	#outer_results_container > .results-wrapper {
+		display:block;
+		overflow-y:scroll;
+		padding:1em;
+		flex:1;
+		border: #DDD solid 0.5px;
+		border-style:none solid;
+	}
+		.results-wrapper > table {
+			width: 100%;
+			text-align: left;
+		}
+			.results-wrapper th, .results-wrapper td {
+				padding:0.3em 0.1em;
+			}
